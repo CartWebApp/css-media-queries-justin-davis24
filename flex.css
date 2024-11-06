@@ -63,13 +63,33 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px){
+  .quarter, .third {
+    width: calc(97% / 2);
+  }
 
+  [class^="box"]:last-child {
+    /* width: 98%; */
+    flex-grow: 1;
+  }
 
-
+  .flex-container {
+    height: fit-content;
+  }
+}
 
 /* Mobile Styles*/
+@media screen and (max-width: 520px){
+  [class^="box"]{
+    width: 97%;
+    height: 29vh;
+  }
+}
 
 
 
 
 
+/* @media also works with print, not just screen */
+
+/* remember to use keyword "and" */
